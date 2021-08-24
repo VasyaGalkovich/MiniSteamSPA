@@ -13,6 +13,6 @@ branches:
 
   deploy:
     provider: heroku
-    app: MiniSteamSPA
+    app: mini-steam-spa
     api_key:
       secure: "9a8665f3-fbc3-45d8-bfb8-531795173af2"
