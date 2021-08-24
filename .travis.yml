@@ -1,0 +1,18 @@
+language: node_js
+node_js: 
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+  only:
+  - master
+
+
+  deploy:
+    provider: heroku
+    app: MiniSteamSPA
+    api_key:
+      secure: "9a8665f3-fbc3-45d8-bfb8-531795173af2"
