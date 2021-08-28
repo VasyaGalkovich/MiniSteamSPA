@@ -1,0 +1,11 @@
+<div>
+    <form [formGroup]="searchForm">
+        <input formControlName="searchGame">        
+        <button type="button" (click)="searchGame()" [disabled]='!searchForm.valid'>Search</button>
+    </form>
+    <div>
+        <div>
+            <app-gamecard *ngFor="let game of gameList" [game]="game"></app-gamecard>
+        </div>
+    </div>
+</div>
